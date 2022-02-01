@@ -770,7 +770,7 @@ internal class AndroidARView(
         } catch (e: java.lang.Exception) {
             completableFutureSuccess.completeExceptionally(e)
         }
-
+        arSceneView.scene.getCamera().setFarClipPlane(750f)
         return completableFutureSuccess
     }
 
